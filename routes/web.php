@@ -19,9 +19,6 @@ Route::get('/', function () {
 
 });
 
-Route::get('/settings', function(){
-    return view('settings');
-});
 Auth::routes();
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
@@ -39,5 +36,19 @@ Route::get('/settings', function () {
 Route::livewire('/mygoals', 'goals');
 
 Route::livewire('/goals/{id}/edit', 'editgoal');
+Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
 });
 Route::livewire('/goals/{id}', 'showgoal');
+
+
+Route::get('/faqs', function () {
+    return view('faq');
+ });
+ 
+ Route::get('/contact', function () {
+    return view('contact');
+ });
+
+ Route::post('/contact', 'ContactController@index');
+//  Route::post('/update-account', 'UserController@update');
+
