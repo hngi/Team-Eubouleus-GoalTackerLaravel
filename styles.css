@@ -1,0 +1,51 @@
+img{
+    border-radius: 50%;
+    width: 30%;
+    float: left;
+    /*  vertical-align: sub; */
+    display: flex;
+    flex-direction: row;
+}
+
+
+a:hover{
+    color: #081136;
+}
+
+h1, h2{
+   color: slateblue;
+   text-align: center;
+}
+
+a{
+    color:slateblue;
+    text-align: left;
+}
+h3, h4{
+    color: slategrey;
+    text-align: center;
+}
+
+.ima, .sra{
+    width: 10%;
+    float: center;
+}
+
+.mtn{
+    text-align: center;
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .75);  
+    text-align: justify;
+    display: inline-flex;
+    flex-direction: row; 
+    align-self: stretch;
+} 
